@@ -1,0 +1,204 @@
+:root {
+    --bodycolor: #000000;
+    --themecolor: cyan; 
+    --iconsize: 1.8rem;
+    --bordercolor: #dcdcdc;
+    --chartese:chartreuse;
+    --orange:  rgb(255, 223, 164);
+    --deepskyblue: deepskyblue;
+    --lightskyblue: lightskyblue;
+    --aliceblue: aliceblue;
+    --medviored: magenta;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bodycolor);
+} 
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo {
+    font-size: var(--iconsize);
+    color: var(--themecolor);
+}
+
+.moon-icon {
+    font-size: var(--iconsize);
+    color: var(--themecolor); 
+}
+
+.moon-icon:hover {
+    transform: scale(110%);
+   
+}
+
+.main {  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.intro-container {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    line-height: 1.5;
+    color: white;
+}
+
+.intro-container h2 {
+    font-size: 2rem; 
+}
+
+.intro-container p {
+    font-size: 1rem; 
+    color: darkgray;
+}
+
+.coins-icon {
+    font-size:  6rem;
+    padding-top: 10%;
+    /*padding-left: 20%;*/
+    color: var(--themecolor);
+}
+
+.bill-container {
+    max-width: 100%;
+    width: 550px;
+    height: auto;
+    background-color: cornflowerblue;
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+}
+
+.form {
+    display: block;
+    text-align: center;
+    border: 0.5px solid var(--bordercolor);
+    border-radius: 24px;
+    padding-top: 4%; 
+    padding-bottom: 4%;
+}
+
+.amount {
+    font-size: 2.5rem; 
+    font-weight: 500;
+    color: white;
+}
+
+.total-container, .people-container {
+    margin-top: 15px;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.total-label, .people-label {
+    width: 100px;
+    font-size: 1.3rem;
+    color: #dcdcdc;
+    display: none;
+}
+
+.total-input-container, .people-input-container {
+    margin-bottom: 5%;  
+}
+
+.total-input, .people-input {
+    max-width: 100%;
+    width: 230px;
+    text-align: center;
+    background-color: transparent;
+    /*font-size: 1.1rem;*/
+    color: gainsboro;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid var(--bordercolor);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  --moz-appearance: textfield;
+}
+
+.calc-btn {
+    max-width: 100%;
+    width: 230px;
+    margin-top: 20px;
+    background-color: var(--themecolor);
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.calc-btn:active {
+    background-color: greenyellow;
+}
+
+.reset-button {
+    margin-top: 30px;
+    font-size: 1.6rem; 
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.reset-btn:hover {
+    color: var(--themecolor);
+}
+
+.footer {
+    margin-top: 10%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.footer p {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 900px) {
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main {
+        margin-top: 70px;
+        column-gap: 30px;
+    }
+
+    .amount {
+        position: absolute;
+        top: 9%;
+        left: 60%;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doShare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="body">
+    <header class="header">
+        <h1 class="logo">DoShare</h1>
+        <nav class="nav"><i class="moon-icon fa-solid fa-moon" ></i><nav>
+    </header>
+    <main class="main">
+        <section class="intro-container">
+            <h2>Share Your Bills</h2>
+            <p>Simpler nights out with family & friends</p>
+            <p><i class="coins-icon fa-solid fa-coins"></i></p>
+        </section>
+        <div class="amount-container" >
+            <p class="amount"></p>
+        </div>
+        <section class="bill-container">
+            <form class="form">
+                <p class="total-container">
+                    <label class="total-label" for="total">Total</label>
+                </p>
+                    <p><input name="total" class="total-input" id="total" value="" type="number" placeholder="Enter bill total" min="0.01" step="0.01"></p>
+                <p class="people-container">
+                    <label class="people-label" for="people">People</label>
+                </p>
+                <p><input name="people" class="people-input" id="people" value="" type="number" placeholder="Enter people"></p>
+            
+                <p class="calc-btn-container">
+                    <button class="calc-btn" name="calculate">Calculate</button>
+                </p>
+                <p class="reset-btn-container" type="reset">
+                    <button class="reset-button" name="reset"><i class="fa-solid fa-rotate-right"></i></button>
+                </p>
+            </form>
+        </section> 
+    </main>
+        <footer class="footer">
+            <p>&copy Lorna London 2023</p>
+        </footer>
+   
+<script src="script.js"></script>
+</body>
+</html>
